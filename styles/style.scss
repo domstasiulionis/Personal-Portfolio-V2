@@ -257,3 +257,335 @@ body {
     opacity: 100%;
   }
 }
+
+@media (max-width: 1830px) {
+  .lp {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (max-width: 1660px) {
+  .lp {
+    &-intro {
+      &__text {
+        font-size: 20px;
+      }
+
+      &-name {
+        font-size: 110px;
+      }
+    }
+
+    &-right {
+      &__blob {
+        width: 630px;
+      }
+
+      &__guy {
+        width: 520px;
+        top: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1540px) {
+  .lp {
+    &-intro {
+      &__text {
+        font-size: 16px;
+      }
+
+      &-name {
+        font-size: 100px;
+      }
+
+      &-box {
+        width: 98%;
+      }
+
+      &-desc {
+        width: 550px;
+      }
+    }
+
+    &-right {
+      &__blob {
+        width: 570px;
+      }
+
+      &__guy {
+        width: 480px;
+        top: 25px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .lp {
+    &-intro {
+      &__text {
+        font-size: 16px;
+      }
+
+      &-name {
+        font-size: 94px;
+      }
+
+      &-box {
+        width: 97%;
+      }
+
+      &-desc {
+        width: 520px;
+        margin-left: 5px;
+      }
+    }
+
+    &-right {
+      &__blob {
+        width: 540px;
+      }
+
+      &__guy {
+        width: 430px;
+        top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  .lp {
+    padding-left: 70px;
+    padding-right: 70px;
+
+    &-intro {
+      &__text {
+        font-size: 16px;
+      }
+
+      &-name {
+        font-size: 94px;
+      }
+
+      &-box {
+        width: 97%;
+      }
+    }
+
+    &-right {
+      &__blob {
+        width: 540px;
+      }
+
+      &__guy {
+        width: 430px;
+        top: 30px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1270px) {
+  .lp {
+    &-intro {
+      &__text {
+        font-size: 15px;
+      }
+
+      &-name {
+        font-size: 92px;
+      }
+
+      &-box {
+        width: 97%;
+      }
+
+      &-desc {
+        width: 500px;
+        margin-left: 13px;
+      }
+    }
+
+    &-right {
+      &__blob {
+        width: 490px;
+        margin-top: -70px;
+      }
+
+      &__guy {
+        width: 400px;
+        top: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .lp {
+    justify-content: center;
+    &-intro {
+      &__text {
+        font-size: 15px;
+        text-align: center;
+      }
+
+      &-name {
+        font-size: 92px;
+      }
+
+      &-box {
+        width: 97%;
+      }
+
+      &-desc {
+        width: 500px;
+        margin-left: 13px;
+      }
+    }
+
+    &-right {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .lp {
+    &-intro {
+      &__text {
+        font-size: 13px;
+        text-align: center;
+      }
+
+      &-name {
+        font-size: 80px;
+        justify-content: center;
+      }
+
+      &-box {
+        width: 97%;
+        height: 40px;
+
+        &__title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .lp {
+    &-intro {
+      &__text {
+        font-size: 13px;
+      }
+
+      &-name {
+        font-size: 60px;
+      }
+
+      &-box {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+
+        &__title {
+          font-size: 13px;
+          margin-top: -2px;
+          text-align: center;
+        }
+      }
+
+      &-desc {
+        width: 420px;
+        font-size: 14px;
+        margin-left: 0px;
+      }
+
+      &-circle {
+        width: 25px;
+        height: 25px;
+
+        i {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 465px) {
+  .lp {
+    &-intro {
+      &__text {
+        font-size: 12px;
+      }
+
+      &-name {
+        margin-top: 10px;
+        margin-left: 5px;
+        font-size: 50px;
+      }
+
+      &-box {
+        width: 80%;
+
+        &__title {
+          font-size: 12px;
+          margin-top: 0;
+          margin-left: 8px;
+          letter-spacing: 5px;
+        }
+      }
+
+      &-desc {
+        width: 380px;
+        font-size: 12px;
+        margin-left: 0px;
+      }
+
+      &-circle {
+        i {
+          margin-top: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .lp {
+    &-intro {
+      &-box {
+        margin-top: 10px;
+      }
+
+      &-desc {
+        width: 320px;
+        font-size: 12px;
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .lp {
+    &-intro {
+      transform: scale(0.9);
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .lp {
+    &-intro {
+      transform: scale(0.85);
+    }
+  }
+}
