@@ -6,8 +6,32 @@
   font-family: "Montserrat", sans-serif;
 }
 
+.two {
+  width: 100%;
+  height: 100vh;
+  background-color: #00ff40;
+}
+
 body {
   background-color: rgb(2, 2, 2);
+}
+
+.active {
+  margin-top: -8px;
+  box-shadow: inset 0 51px 0 0.01px rgb(0, 179, 0);
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(3px);
+  transform: translateX(-20%);
+  transition: all 1s;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .bg {
@@ -34,6 +58,7 @@ body {
   width: 100%;
   height: 60px;
   background-color: black;
+  z-index: 2;
 }
 .nav-content {
   display: flex;
@@ -139,6 +164,33 @@ body {
   margin-left: -8px;
   letter-spacing: 9px;
 }
+.lp-intro-name__letter:nth-child(1) {
+  transition-delay: 100ms;
+}
+.lp-intro-name__letter:nth-child(2) {
+  transition-delay: 200ms;
+}
+.lp-intro-name__letter:nth-child(3) {
+  transition-delay: 300ms;
+}
+.lp-intro-name__letter:nth-child(4) {
+  transition-delay: 400ms;
+}
+.lp-intro-name__letter:nth-child(5) {
+  transition-delay: 500ms;
+}
+.lp-intro-name__letter:nth-child(6) {
+  transition-delay: 600ms;
+}
+.lp-intro-name__letter:nth-child(7) {
+  transition-delay: 700ms;
+}
+.lp-intro-name__letter:nth-child(8) {
+  transition-delay: 800ms;
+}
+.lp-intro-name__letter:nth-child(9) {
+  transition-delay: 900ms;
+}
 .lp-intro-box {
   position: relative;
   display: flex;
@@ -192,9 +244,9 @@ body {
   width: 30px;
   height: 30px;
   margin: 15px auto 0 auto;
+  color: white;
   background-color: rgb(0, 179, 0);
   border-radius: 25px;
-  color: white;
 }
 .lp-right {
   position: relative;
@@ -204,6 +256,8 @@ body {
   position: relative;
   width: 690px;
   margin-top: -50px;
+  -webkit-animation: fadeIn 0.2s ease-in-out forwards;
+          animation: fadeIn 0.2s ease-in-out forwards;
 }
 .lp-right__guy {
   position: absolute;
@@ -472,6 +526,9 @@ body {
   }
 }
 @media (max-width: 400px) {
+  .lp-intro i {
+    display: none;
+  }
   .lp-intro-box {
     margin-top: 10px;
   }

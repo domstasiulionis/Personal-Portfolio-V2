@@ -13,17 +13,23 @@
   </head>
   <body>
     <img class="bg" src="./assets/imgs/background/bg.png" alt="bg" />
-    <!-- <nav class="nav">
+    <nav class="nav">
       <div class="nav-content">
         <h1 class="nav-content__logo">DS</h1>
         <div class="nav-right">
           <ul class="nav-right-list">
-            <a class="nav-right-list__link" href="#home"><li>Home</li></a>
-            <a class="nav-right-list__link" href="#about"><li>About</li></a>
-            <a class="nav-right-list__link" href="#projects"
+            <a class="nav-right-list__link home active" href="#home"
+              ><li>Home</li></a
+            >
+            <a class="nav-right-list__link about" href="#about"
+              ><li>About</li></a
+            >
+            <a class="nav-right-list__link projects" href="#projects"
               ><li>Projects</li></a
             >
-            <a class="nav-right-list__link" href="#contact"><li>Contact</li></a>
+            <a class="nav-right-list__link contact" href="#contact"
+              ><li>Contact</li></a
+            >
           </ul>
           <a
             href="./assets/misc/Dom-CV.pdf"
@@ -33,21 +39,23 @@
           >
         </div>
       </div>
-    </nav> -->
+    </nav>
 
-    <main class="lp" id="home">
+    <section class="lp home" id="home">
       <div class="lp-intro">
-        <h1 class="lp-intro__text">Hey there, I'm</h1>
+        <h1 class="lp-intro__text">
+          Hey there <i class="fas fa-hand-spock" style="color: yellow"></i>, I'm
+        </h1>
         <h1 class="lp-intro-name">
-          <div class="lp-intro-name__letter">D</div>
-          <div class="lp-intro-name__letter">o</div>
-          <div class="lp-intro-name__letter">m</div>
-          <div class="lp-intro-name__letter">i</div>
-          <div class="lp-intro-name__letter">n</div>
-          <div class="lp-intro-name__letter">y</div>
-          <div class="lp-intro-name__letter">k</div>
-          <div class="lp-intro-name__letter">a</div>
-          <div class="lp-intro-name__letter">s</div>
+          <div class="lp-intro-name__letter hidden">D</div>
+          <div class="lp-intro-name__letter hidden">o</div>
+          <div class="lp-intro-name__letter hidden">m</div>
+          <div class="lp-intro-name__letter hidden">i</div>
+          <div class="lp-intro-name__letter hidden">n</div>
+          <div class="lp-intro-name__letter hidden">y</div>
+          <div class="lp-intro-name__letter hidden">k</div>
+          <div class="lp-intro-name__letter hidden">a</div>
+          <div class="lp-intro-name__letter hidden">s</div>
         </h1>
         <div class="lp-intro-box">
           <p class="lp-intro-box__title">Front-End Developer</p>
@@ -72,11 +80,14 @@
           alt="blob" />
         <div>
           <img
-            class="lp-right__guy"
+            class="lp-right__guy hidden"
             src="/assets/imgs/Other/landing-guy.png"
             alt="guy" />
         </div>
       </div>
-    </main>
+    </section>
+
+    <section class="two about" id="about"></section>
+    <section class="two projects" id="projects"></section>
   </body>
 </html>
