@@ -1,19 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 @import "../styles/other/scrollbar.scss";
 
-$green: rgb(0, 179, 0);
+$green: #00b300;
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-}
-
-.two {
-  width: 100%;
-  height: 100vh;
-  background-color: #00ff40;
 }
 
 body {
@@ -207,6 +201,7 @@ body {
 
       &__title {
         position: absolute;
+        text-align: center;
         color: white;
         letter-spacing: 10px;
         animation: fadeIn 1s ease-in-out forwards;
@@ -370,6 +365,143 @@ body {
       &__logo {
         height: 40px;
         margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+.prj {
+  max-width: 1700px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 90px 25px 0 25px;
+
+  &-header {
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+
+    &__title {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    &__link {
+      color: $green;
+      text-decoration: none;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: green;
+      }
+    }
+
+    &__arrow {
+      transform: rotate(220deg);
+      color: $green;
+    }
+  }
+
+  &-projects {
+    margin-top: 80px;
+
+    &-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+
+  &-card {
+    width: 500px;
+    height: 550px;
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+
+    &-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      background: linear-gradient(
+        0deg,
+        rgba(0, 179, 0, 1) 0%,
+        rgba(51, 0, 126, 0) 100%
+      );
+      border-radius: 20px;
+      user-select: none;
+      pointer-events: none;
+
+      img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 20px;
+        opacity: 0.8;
+        border-bottom: 3px solid $green;
+      }
+    }
+
+    &-inner {
+      color: white;
+      padding: 20px;
+
+      p {
+        width: 100%;
+        height: 155px;
+        overflow-y: auto;
+      }
+    }
+
+    &-tags {
+      display: flex;
+      margin: 10px 0;
+      gap: 10px;
+      cursor: default;
+
+      &__name {
+        padding: 2px 10px;
+        background-color: rgb(122, 94, 0);
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background-color: rgb(192, 147, 0);
+        }
+      }
+    }
+
+    &__btn {
+      width: 140px;
+      height: 40px;
+      color: white;
+      border-radius: 10px;
+      border: 2px solid $green;
+      background-color: $green;
+      transition: all 0.2s ease-in-out;
+      font-size: 15px;
+      margin-top: 25px;
+      cursor: pointer;
+
+      &-icon {
+        margin-right: 10px;
+      }
+
+      &--primary {
+        background-color: $green;
+        margin-right: 20px;
+
+        &:hover {
+          background-color: #007700;
+          border: 2px solid #007700;
+        }
+      }
+
+      &--secondary {
+        background-color: transparent;
+
+        &:hover {
+          box-shadow: inset 145px 0 0 0.01px #00b300;
+        }
       }
     }
   }
