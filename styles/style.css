@@ -345,39 +345,43 @@ body {
   flex-wrap: wrap;
   gap: 25px;
 }
+.abt-me-skills--top, .abt-me-skills--bottom {
+  display: flex;
+  gap: 25px;
+}
+.abt-me-skills--top .abt-me-tech:nth-child(1) {
+  transition-delay: 100ms;
+}
+.abt-me-skills--top .abt-me-tech:nth-child(2) {
+  transition-delay: 200ms;
+}
+.abt-me-skills--top .abt-me-tech:nth-child(3) {
+  transition-delay: 300ms;
+}
+.abt-me-skills--top .abt-me-tech:nth-child(4) {
+  transition-delay: 400ms;
+}
+.abt-me-skills--top .abt-me-tech:nth-child(5) {
+  transition-delay: 500ms;
+}
+.abt-me-skills--bottom .abt-me-tech:nth-child(1) {
+  transition-delay: 600ms;
+}
+.abt-me-skills--bottom .abt-me-tech:nth-child(2) {
+  transition-delay: 700ms;
+}
+.abt-me-skills--bottom .abt-me-tech:nth-child(3) {
+  transition-delay: 800ms;
+}
+.abt-me-skills--bottom .abt-me-tech:nth-child(4) {
+  transition-delay: 900ms;
+}
 .abt-me-tech {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 15px;
-}
-.abt-me-tech:nth-child(1) {
-  transition-delay: 100ms;
-}
-.abt-me-tech:nth-child(2) {
-  transition-delay: 200ms;
-}
-.abt-me-tech:nth-child(3) {
-  transition-delay: 300ms;
-}
-.abt-me-tech:nth-child(4) {
-  transition-delay: 400ms;
-}
-.abt-me-tech:nth-child(5) {
-  transition-delay: 500ms;
-}
-.abt-me-tech:nth-child(6) {
-  transition-delay: 600ms;
-}
-.abt-me-tech:nth-child(7) {
-  transition-delay: 700ms;
-}
-.abt-me-tech:nth-child(8) {
-  transition-delay: 800ms;
-}
-.abt-me-tech:nth-child(9) {
-  transition-delay: 900ms;
 }
 .abt-me-tech__logo {
   height: 40px;
@@ -602,6 +606,7 @@ body {
   .lp-intro-box__title {
     font-size: 13px;
     margin-top: -2px;
+    margin-left: 15px;
     text-align: center;
   }
   .lp-intro-desc {
@@ -645,7 +650,7 @@ body {
   }
 }
 @media (max-width: 400px) {
-  .lp-intro i {
+  .lp-intro .hand {
     display: none;
   }
   .lp-intro-box {
@@ -665,5 +670,168 @@ body {
 @media (max-width: 330px) {
   .lp-intro {
     transform: scale(0.85);
+  }
+}
+@media (max-width: 1590px) {
+  .abt-left {
+    margin-right: -60px;
+  }
+  .abt-left__blob {
+    width: 590px;
+  }
+  .abt-left__guy {
+    position: absolute;
+    width: 630px;
+    left: 50px;
+  }
+}
+@media (max-width: 1500px) {
+  .abt-left {
+    margin-right: -50px;
+  }
+  .abt-left__blob {
+    width: 540px;
+    left: 40px;
+  }
+  .abt-left__guy {
+    width: 590px;
+    left: 50px;
+    top: 70px;
+  }
+  .abt-me__header {
+    font-size: 55px;
+  }
+  .abt-me__desc {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1450px) {
+  .abt-me {
+    padding-right: 40px;
+  }
+  .abt-me-skills {
+    gap: 25px;
+  }
+  .abt-me-tech__logo {
+    height: 34px;
+  }
+}
+@media (max-width: 1410px) {
+  .abt-left {
+    display: none;
+  }
+  .abt-me {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+  .abt-me-skills {
+    gap: 25px;
+  }
+  .abt-me-tech__logo {
+    height: 34px;
+  }
+}
+@media (max-width: 920px) {
+  .abt {
+    padding-top: 20px;
+  }
+  .abt-me__header {
+    font-size: 52px;
+  }
+  .abt-me__desc {
+    font-size: 14px;
+  }
+  .abt-me-skills--bottom {
+    margin-top: -20px;
+  }
+  .abt-me-tech__logo {
+    height: 34px;
+  }
+}
+@media (max-width: 780px) {
+  .abt {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+  .abt-me {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  .abt-me__header {
+    font-size: 42px;
+    margin-top: 50px;
+  }
+  .abt-me__desc {
+    font-size: 14px;
+  }
+  .abt-me-tech__logo {
+    height: 30px;
+  }
+}
+@media (max-width: 590px) {
+  .abt-me__header {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  .abt-me__desc {
+    font-size: 13px;
+  }
+  .abt-me-tech__name {
+    font-size: 13px;
+  }
+  .abt-me-tech__logo {
+    height: 24px;
+  }
+}
+@media (max-width: 455px) {
+  .abt {
+    height: auto;
+  }
+  .abt-me {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .abt-me__header {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  .abt-me__desc {
+    font-size: 13px;
+  }
+  .abt-me-tech__name {
+    font-size: 13px;
+  }
+  .abt-me-tech__logo {
+    height: 24px;
+  }
+}
+@media (max-width: 385px) {
+  .abt-me__header {
+    font-size: 32px;
+    margin-top: 50px;
+  }
+  .abt-me-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  .abt-me-skills--top, .abt-me-skills--bottom {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .abt-me-skills--bottom {
+    margin-top: 0px;
+  }
+  .abt-me__desc {
+    font-size: 13px;
+  }
+  .abt-me-tech {
+    margin-top: 15px;
+  }
+  .abt-me-tech__name {
+    font-size: 13px;
+  }
+  .abt-me-tech__logo {
+    height: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
