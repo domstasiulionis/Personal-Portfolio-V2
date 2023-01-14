@@ -248,7 +248,7 @@ body {
   margin-top: 20px;
 }
 .lp-intro-desc__text {
-  color: white;
+  color: rgb(172, 172, 172);
   -webkit-animation: fadeIn 0.7s ease-in-out forwards;
           animation: fadeIn 0.7s ease-in-out forwards;
 }
@@ -280,6 +280,11 @@ body {
 .lp-right {
   position: relative;
   margin-right: -30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
 }
 .lp-right__blob {
   position: relative;
@@ -294,11 +299,96 @@ body {
   top: 50px;
 }
 
+.abt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1700px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+.abt-left {
+  position: relative;
+  margin-right: -30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+.abt-left__blob {
+  position: relative;
+  width: 640px;
+  -webkit-animation: fadeIn 0.2s ease-in-out forwards;
+          animation: fadeIn 0.2s ease-in-out forwards;
+}
+.abt-left__guy {
+  position: absolute;
+  width: 690px;
+  left: 50px;
+  top: 70px;
+}
+.abt-me {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-left: 100px;
+  padding-right: 80px;
+}
+.abt-me__header {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+.abt-me-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.abt-me-tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+.abt-me-tech:nth-child(1) {
+  transition-delay: 100ms;
+}
+.abt-me-tech:nth-child(2) {
+  transition-delay: 200ms;
+}
+.abt-me-tech:nth-child(3) {
+  transition-delay: 300ms;
+}
+.abt-me-tech:nth-child(4) {
+  transition-delay: 400ms;
+}
+.abt-me-tech:nth-child(5) {
+  transition-delay: 500ms;
+}
+.abt-me-tech:nth-child(6) {
+  transition-delay: 600ms;
+}
+.abt-me-tech:nth-child(7) {
+  transition-delay: 700ms;
+}
+.abt-me-tech:nth-child(8) {
+  transition-delay: 800ms;
+}
+.abt-me-tech:nth-child(9) {
+  transition-delay: 900ms;
+}
+.abt-me-tech__logo {
+  height: 40px;
+  margin-bottom: 10px;
+}
+
 @-webkit-keyframes box {
   0% {
     height: 0px;
     border-radius: 0;
-    background-color: #00ff40;
+    background-color: #33ff00;
   }
   100% {
     border-radius: 20px;
@@ -309,7 +399,7 @@ body {
   0% {
     height: 0px;
     border-radius: 0;
-    background-color: #00ff40;
+    background-color: #33ff00;
   }
   100% {
     border-radius: 20px;
