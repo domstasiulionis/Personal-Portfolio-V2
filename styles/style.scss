@@ -10,6 +10,39 @@ $green: #00b300;
   font-family: "Montserrat", sans-serif;
 }
 
+// Scrol bar
+/* Width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #000000;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #303030;
+  border-radius: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+  border-radius: 20px;
+}
+
+// Support for browsers that do not support webkit
+@supports (scrollbar-color: #303030 #000000) {
+  * {
+    scrollbar-color: #303030 #000000;
+    scrollbar-width: thin;
+  }
+}
+
 body {
   background-color: rgb(2, 2, 2);
 }
@@ -371,10 +404,14 @@ body {
 }
 
 .prj {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   max-width: 1700px;
   height: 100vh;
   margin: 0 auto;
-  padding: 90px 25px 0 25px;
+  padding: 0px 25px 0 25px;
 
   &-header {
     text-align: center;
@@ -409,15 +446,27 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 50px;
+      gap: 30px;
+      padding-left: 40px;
+      padding-right: 40px;
     }
   }
 
   &-card {
-    width: 500px;
+    width: 450px;
     height: 550px;
     border-radius: 20px;
     background-color: rgb(0, 0, 0);
+
+    &:nth-child(1) {
+      transition-delay: 200ms;
+    }
+    &:nth-child(2) {
+      transition-delay: 300ms;
+    }
+    &:nth-child(3) {
+      transition-delay: 400ms;
+    }
 
     &-img {
       width: 100%;
@@ -450,6 +499,7 @@ body {
         width: 100%;
         height: 155px;
         overflow-y: auto;
+        margin-top: -15px;
       }
     }
 
@@ -457,6 +507,7 @@ body {
       display: flex;
       margin: 10px 0;
       gap: 10px;
+      overflow-x: scroll;
       cursor: default;
 
       &__name {
@@ -1135,6 +1186,215 @@ body {
           height: 24px;
         }
       }
+    }
+  }
+}
+
+// Projects Media Queries
+@media (max-width: 1540px) {
+  .prj {
+    height: auto;
+
+    &-header {
+      padding: 90px 50px 0px 50px;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .prj {
+    &-header {
+      &__title {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1450px) {
+  .prj {
+    &-header {
+      &__desc {
+        font-size: 15px;
+      }
+
+      &__title {
+        font-size: 55px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1160px) {
+  .prj {
+    &-header {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    &-projects {
+      margin-top: 80px;
+
+      &-grid {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+
+    &-card {
+      width: 450px;
+
+      &-inner {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .prj {
+    &-projects-grid {
+      margin-top: -20px;
+    }
+    &-header {
+      &__desc {
+        padding: 0 70px;
+      }
+
+      &__title {
+        font-size: 42px;
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .prj {
+    &-card {
+      width: 380px;
+      height: 570px;
+
+      &-tags {
+        &__name {
+          font-size: 14px;
+        }
+      }
+
+      &-inner {
+        p {
+          font-size: 14px;
+          height: 175px;
+        }
+      }
+    }
+
+    &-header {
+      &__desc {
+        padding: 0 40px;
+      }
+
+      &__title {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .prj {
+    &-header {
+      &__desc {
+        padding: 0 10px;
+      }
+    }
+  }
+}
+
+@media (max-width: 440px) {
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #000000;
+    border-radius: 0px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    border-radius: 20px;
+  }
+
+  .prj {
+    &-card {
+      width: 320px;
+      height: 570px;
+
+      &__btn {
+        width: 120px;
+        height: 40px;
+      }
+
+      &-tags {
+        &__name {
+          font-size: 14px;
+        }
+      }
+
+      &-inner {
+        p {
+          font-size: 13px;
+          height: 175px;
+        }
+      }
+    }
+
+    &-header {
+      &__desc {
+        padding: 0px;
+        font-size: 14px;
+      }
+
+      &__title {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 390px) {
+  .prj {
+    &-projects {
+      &-grid {
+        padding-left: 0px;
+        padding-right: 00px;
+      }
+    }
+  }
+}
+
+@media (max-width: 360px) {
+  .prj {
+    &-card {
+      width: 300px;
+      height: 570px;
+
+      &__btn {
+        width: 100px;
+        height: 40px;
+
+        i {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 330px) {
+  .prj {
+    &-card {
+      width: 280px;
     }
   }
 }
