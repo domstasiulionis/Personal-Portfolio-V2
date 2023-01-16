@@ -1,4 +1,4 @@
-# Personal-Portfolio-V2
+# :selfie: Personal-Portfolio-V2
 Live site: https://domthedev.netlify.app/
 
 ## :receipt: About
