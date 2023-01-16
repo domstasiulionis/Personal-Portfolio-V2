@@ -581,17 +581,17 @@ body {
   max-width: 1700px;
   height: 100vh;
   margin: 0 auto;
-  padding: 25px 25px;
+  padding: 0px 25px 0 25px;
 
   &-header {
     text-align: center;
     margin: 0 auto;
     color: white;
-    padding-top: 60px;
 
     &__title {
       font-size: 60px;
       margin-bottom: 20px;
+      padding-top: 80px;
     }
 
     &__link {
@@ -757,6 +757,10 @@ body {
 
         &-menu {
           position: fixed;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
           top: 60px;
           left: -100%;
           justify-content: center;
@@ -769,7 +773,7 @@ body {
 
           ul {
             position: static;
-            margin-top: 130px;
+            margin-top: -50px;
           }
 
           &__item {
@@ -854,7 +858,7 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 550px) {
   .nav {
     &-content {
       &-hamburger {
@@ -1448,7 +1452,7 @@ body {
 @media (max-width: 1540px) {
   .prj {
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 
     &-header {
       padding: 90px 50px 0px 50px;
@@ -1738,6 +1742,9 @@ body {
 
 @media (max-width: 450px) {
   .ct {
+    height: auto;
+    padding-bottom: 50px;
+
     &-form {
       width: 350px;
     }
