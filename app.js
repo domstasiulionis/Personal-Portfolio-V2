@@ -73,5 +73,5 @@ submit.addEventListener("click", () => {
   setTimeout(() => {
     inputs.forEach((input) => (input.value = ""));
     textAreas.forEach((area) => (area.value = ""));
-  }, 5000);
+  }, 10000);
 });
