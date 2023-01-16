@@ -500,6 +500,10 @@ body {
 .prj-card-tags__name:hover {
   background-color: rgb(192, 147, 0);
 }
+.prj-card-btns-con {
+  display: flex;
+  gap: 15px;
+}
 .prj-card__btn {
   width: 140px;
   height: 40px;
@@ -517,14 +521,13 @@ body {
 }
 .prj-card__btn--primary {
   background-color: #00b300;
-  margin-right: 20px;
 }
 .prj-card__btn--primary:hover {
   background-color: #007700;
   border: 2px solid #007700;
 }
 .prj-card__btn--secondary {
-  background-color: transparent;
+  background-color: black;
 }
 .prj-card__btn--secondary:hover {
   box-shadow: inset 145px 0 0 0.01px #00b300;

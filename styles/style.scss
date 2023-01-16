@@ -535,6 +535,11 @@ body {
       }
     }
 
+    &-btns-con {
+      display: flex;
+      gap: 15px;
+    }
+
     &__btn {
       width: 140px;
       height: 40px;
@@ -553,7 +558,6 @@ body {
 
       &--primary {
         background-color: $green;
-        margin-right: 20px;
 
         &:hover {
           background-color: #007700;
@@ -562,7 +566,7 @@ body {
       }
 
       &--secondary {
-        background-color: transparent;
+        background-color: black;
 
         &:hover {
           box-shadow: inset 145px 0 0 0.01px #00b300;
