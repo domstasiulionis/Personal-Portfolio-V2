@@ -423,13 +423,15 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1700px;
-  height: 100vh;
   margin: 0 auto;
+  margin-bottom: 90px;
   padding: 0px 25px 0 25px;
 
   &-header {
     text-align: center;
     margin: 0 auto;
+    margin-top: 90px;
+
     color: white;
 
     &__title {
@@ -480,6 +482,9 @@ body {
     }
     &:nth-child(3) {
       transition-delay: 400ms;
+    }
+    &:nth-child(4) {
+      transition-delay: 500ms;
     }
 
     &-img {
@@ -1459,7 +1464,7 @@ body {
     padding-bottom: 0px;
 
     &-header {
-      padding: 90px 50px 0px 50px;
+      padding: 0px 50px 0px 50px;
     }
   }
 }
@@ -1537,7 +1542,7 @@ body {
   .prj {
     &-card {
       width: 380px;
-      height: 570px;
+      height: 580px;
 
       &-tags {
         &__name {
@@ -1588,10 +1593,13 @@ body {
     border-radius: 20px;
   }
 
+  .mb-adj {
+    margin-top: -5px;
+  }
+
   .prj {
     &-card {
       width: 320px;
-      height: 570px;
 
       &__btn {
         width: 120px;
@@ -1640,7 +1648,6 @@ body {
   .prj {
     &-card {
       width: 300px;
-      height: 570px;
 
       &__btn {
         width: 100px;

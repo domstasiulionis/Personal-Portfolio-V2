@@ -402,13 +402,14 @@ body {
   flex-direction: column;
   align-items: center;
   max-width: 1700px;
-  height: 100vh;
   margin: 0 auto;
+  margin-bottom: 90px;
   padding: 0px 25px 0 25px;
 }
 .prj-header {
   text-align: center;
   margin: 0 auto;
+  margin-top: 90px;
   color: white;
 }
 .prj-header__title {
@@ -452,6 +453,9 @@ body {
 }
 .prj-card:nth-child(3) {
   transition-delay: 400ms;
+}
+.prj-card:nth-child(4) {
+  transition-delay: 500ms;
 }
 .prj-card-img {
   width: 100%;
@@ -1196,7 +1200,7 @@ body {
     padding-bottom: 0px;
   }
   .prj-header {
-    padding: 90px 50px 0px 50px;
+    padding: 0px 50px 0px 50px;
   }
 }
 @media (max-width: 1500px) {
@@ -1245,7 +1249,7 @@ body {
 @media (max-width: 590px) {
   .prj-card {
     width: 380px;
-    height: 570px;
+    height: 580px;
   }
   .prj-card-tags__name {
     font-size: 14px;
@@ -1277,9 +1281,11 @@ body {
     background: #555;
     border-radius: 20px;
   }
+  .mb-adj {
+    margin-top: -5px;
+  }
   .prj-card {
     width: 320px;
-    height: 570px;
   }
   .prj-card__btn {
     width: 120px;
@@ -1309,7 +1315,6 @@ body {
 @media (max-width: 360px) {
   .prj-card {
     width: 300px;
-    height: 570px;
   }
   .prj-card__btn {
     width: 100px;
