@@ -71,7 +71,6 @@ body {
      object-fit: cover;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
   z-index: -1;
@@ -111,7 +110,6 @@ body {
   transition: all 0.3s ease-in-out;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .nav-content__logo:hover {
@@ -133,7 +131,6 @@ body {
   padding: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .nav-right-list__link:hover {
@@ -179,11 +176,9 @@ body {
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   font-size: 24px;
-  -webkit-animation: fadeIn 0.7s ease-in-out forwards;
-          animation: fadeIn 0.7s ease-in-out forwards;
+  animation: fadeIn 0.7s ease-in-out forwards;
 }
 .lp-intro-name {
   display: flex;
@@ -193,7 +188,6 @@ body {
   pointer-events: none;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
 }
 .lp-intro-name__letter {
@@ -238,16 +232,14 @@ body {
   margin-top: 20px;
   margin-left: 4px;
   overflow: hidden;
-  -webkit-animation: box 0.7s ease-in-out forwards;
-          animation: box 0.7s ease-in-out forwards;
+  animation: box 0.7s ease-in-out forwards;
 }
 .lp-intro-box__title {
   position: absolute;
   text-align: center;
   color: white;
   letter-spacing: 10px;
-  -webkit-animation: fadeIn 1s ease-in-out forwards;
-          animation: fadeIn 1s ease-in-out forwards;
+  animation: fadeIn 1s ease-in-out forwards;
 }
 .lp-intro-desc {
   margin: 0 auto;
@@ -257,8 +249,7 @@ body {
 }
 .lp-intro-desc__text {
   color: rgb(172, 172, 172);
-  -webkit-animation: fadeIn 0.7s ease-in-out forwards;
-          animation: fadeIn 0.7s ease-in-out forwards;
+  animation: fadeIn 0.7s ease-in-out forwards;
 }
 .lp-intro-scroll {
   display: flex;
@@ -266,13 +257,11 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 200px;
-  -webkit-animation: fadeIn 0.7s ease-in-out forwards;
-          animation: fadeIn 0.7s ease-in-out forwards;
+  animation: fadeIn 0.7s ease-in-out forwards;
 }
 .lp-intro-scroll__text {
   color: white;
-  -webkit-animation: 0.9s linear infinite alternate scrollDown;
-          animation: 0.9s linear infinite alternate scrollDown;
+  animation: 0.9s linear infinite alternate scrollDown;
 }
 .lp-intro-circle {
   display: flex;
@@ -290,7 +279,6 @@ body {
   margin-right: -30px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
 }
@@ -298,8 +286,7 @@ body {
   position: relative;
   width: 690px;
   margin-top: -50px;
-  -webkit-animation: fadeIn 0.2s ease-in-out forwards;
-          animation: fadeIn 0.2s ease-in-out forwards;
+  animation: fadeIn 0.2s ease-in-out forwards;
 }
 .lp-right__guy {
   position: absolute;
@@ -321,15 +308,13 @@ body {
   margin-right: -30px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
 }
 .abt-left__blob {
   position: relative;
   width: 640px;
-  -webkit-animation: fadeIn 0.2s ease-in-out forwards;
-          animation: fadeIn 0.2s ease-in-out forwards;
+  animation: fadeIn 0.2s ease-in-out forwards;
 }
 .abt-left__guy {
   position: absolute;
@@ -466,7 +451,6 @@ body {
   border-radius: 20px;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
 }
@@ -647,17 +631,6 @@ body {
   color: rgb(102, 102, 102);
 }
 
-@-webkit-keyframes box {
-  0% {
-    height: 0px;
-    border-radius: 0;
-    background-color: #33ff00;
-  }
-  100% {
-    border-radius: 20px;
-  }
-}
-
 @keyframes box {
   0% {
     height: 0px;
@@ -668,30 +641,13 @@ body {
     border-radius: 20px;
   }
 }
-@-webkit-keyframes title {}
 @keyframes title {}
-@-webkit-keyframes scrollDown {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(10px);
-  }
-}
 @keyframes scrollDown {
   0% {
     transform: translateY(0px);
   }
   100% {
     transform: translateY(10px);
-  }
-}
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
   }
 }
 @keyframes fadeIn {
@@ -723,8 +679,7 @@ body {
     height: 100vh;
     text-align: center;
     transition: all 0.3s ease-in-out;
-    -webkit-animation: fadeOut 0.3s ease-in-out forwards;
-            animation: fadeOut 0.3s ease-in-out forwards;
+    animation: fadeOut 0.3s ease-in-out forwards;
   }
   .nav-content-hamburger-menu ul {
     position: static;
@@ -793,8 +748,7 @@ body {
   .menu-active {
     left: 0;
     transition: all 0.3s ease-in-out;
-    -webkit-animation: fadeIn 0.3s ease-in-out forwards;
-            animation: fadeIn 0.3s ease-in-out forwards;
+    animation: fadeIn 0.3s ease-in-out forwards;
   }
 }
 @media (max-width: 550px) {
